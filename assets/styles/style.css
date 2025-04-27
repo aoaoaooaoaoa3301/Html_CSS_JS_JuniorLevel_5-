@@ -1,0 +1,145 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+* {
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: NotoSans;
+    src: url(../fonts/NotoSans-VariableFont_wdth,wght.ttf);
+}
+
+body {
+    font-family: NotoSans;
+    background: linear-gradient(180deg, #EBF2FC 0%, #EEF8F9 100%);
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    margin-top: 30px;
+    height: 100vh;
+}
+
+button {
+    font-family: NotoSans;
+    font-size: 16px;
+
+    border-radius: 20px;
+    border-color: rgba(0, 0, 0, 0.233);
+    background-color: white;
+    border-width: 1px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: hsl(3, 77%, 44%);
+    color: white;
+    
+}
+
+
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-weight: bold;
+
+    width: 1000px;
+    padding: 16px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    background-color: white;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.13);
+    
+
+    border-radius: 20px;
+}
+.button_disign {
+    background-color: hsl(0, 0%, 93%);
+    padding: 10px;
+    border-radius: 10px;
+}
+.button_disign:hover {
+    background-color: hsl(0, 0%, 78%);
+}
+
+
+.selector {
+    display: flex;
+    justify-content: space-between;
+
+    width: 1032px;
+
+    margin-top: 70px;
+    margin-bottom: 30px;
+    
+}
+.selector-filtr {
+    display: flex;
+    gap: 16px;
+}
+.filtr-but {
+    padding-inline: 16px;
+}
+
+
+
+.containers {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    width: 1032px;
+    gap: 10px;
+
+}
+.container-item {
+    display: flex;
+    flex-direction: column;
+
+    width: 305px;
+    height: 160px;
+    padding: 16px;
+
+    border-radius: 16px;
+
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.13);
+
+    background-color:white;
+}
+.item-text{
+    display: flex;
+    gap: 20px;
+    padding-bottom: 60px;
+}
+.item-text h2 {
+    font-size: 18px;
+    padding-bottom: 5px;
+}
+.item-text p {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.568);
+}
+
+.item-iteract {
+    display: flex;
+    justify-content:space-between;
+}
+.but-remove{
+    padding: 6px;
+    padding-inline: 16px;
+}
+
+
+
+
+
+
+
+
+
