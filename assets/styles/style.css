@@ -24,7 +24,7 @@ body {
     height: 100vh;
 }
 
-button {
+.but_light {
     font-family: NotoSans;
     font-size: 16px;
 
@@ -34,11 +34,28 @@ button {
     border-width: 1px;
     cursor: pointer;
 }
-button:hover {
+.but_light:hover {
     background-color: hsl(3, 77%, 44%);
     color: white;
-    
 }
+
+.but_dark {
+    font-family: NotoSans;
+    font-size: 16px;
+
+    border-radius: 20px;
+    border-color: rgba(255, 255, 255, 0.137);
+    background-color: hsl(225, 23%, 24%);
+    border-width: 1px;
+
+    color:white;
+    cursor: pointer;
+}
+.but_dark:hover {
+    background-color: hsl(3, 71%, 56%);
+    color: hsl(227, 75%, 14%);
+}
+
 
 
 
@@ -60,13 +77,26 @@ button:hover {
 
     border-radius: 20px;
 }
-.button_disign {
+
+#disign-but_light {
     background-color: hsl(0, 0%, 93%);
     padding: 10px;
     border-radius: 10px;
+    cursor: pointer;
+    border: 0;
 }
-.button_disign:hover {
+#disign-but_light:hover {
     background-color: hsl(0, 0%, 78%);
+}
+#disign-but_dark {
+    background-color: hsl(225, 23%, 24%);
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 0;
+}
+#disign-but_dark:hover {
+    background-color: hsl(226, 11%, 37%);
 }
 
 
@@ -84,7 +114,7 @@ button:hover {
     display: flex;
     gap: 16px;
 }
-.filtr-but {
+#filtr-but {
     padding-inline: 16px;
 }
 
@@ -107,7 +137,6 @@ button:hover {
     padding: 16px;
 
     border-radius: 16px;
-
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.13);
 
     background-color:white;
@@ -117,11 +146,11 @@ button:hover {
     gap: 20px;
     padding-bottom: 60px;
 }
-.item-text h2 {
+h2 {
     font-size: 18px;
     padding-bottom: 5px;
 }
-.item-text p {
+.text {
     font-size: 14px;
     color: rgba(0, 0, 0, 0.568);
 }
@@ -130,7 +159,7 @@ button:hover {
     display: flex;
     justify-content:space-between;
 }
-.but-remove{
+#remove-but{
     padding: 6px;
     padding-inline: 16px;
 }
