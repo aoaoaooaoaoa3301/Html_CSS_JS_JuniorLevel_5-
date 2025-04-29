@@ -8,6 +8,9 @@ const container = document.querySelectorAll(".container-item");
 const buts = document.querySelectorAll(".but_light");
 const text = document.querySelectorAll(".text");
 
+const but_toggle = document.querySelectorAll("#toggle-but");
+console.log(but_toggle);
+
 but_disign.addEventListener('click', function(){
     if(theme == "dark"){
         icon_disign.src = "assets/images/icon-moon.svg";
@@ -22,6 +25,21 @@ but_disign.addEventListener('click', function(){
         changeTheme("dark");
     }
 
+});
+
+but_toggle.forEach(el =>{
+    el.addEventListener('click', function(){
+        if(el.className == "but_toggle_active"){
+            el.classList.add("but_toggle_inactive");
+            el.classList.remove("but_toggle_active");
+            
+        }
+        else if(el.className == "but_toggle_inactive"){
+            el.classList.add("but_toggle_active");
+            el.classList.remove("but_toggle_inactive")
+            
+        }
+    });
 });
 
 
@@ -47,7 +65,7 @@ function changeTheme(color){
 
         nav_container.style.background = 'hsl(226, 25%, 17%)';
     }
-    if(color == "light"){
+    else if(color == "light"){
         body.style.background = 'linear-gradient(180deg, #EBF2FC 0%, #EEF8F9 100%)';
         body.style.color = 'black';
 

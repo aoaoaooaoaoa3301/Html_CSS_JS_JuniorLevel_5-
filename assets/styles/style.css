@@ -133,7 +133,7 @@ body {
     flex-direction: column;
 
     width: 305px;
-    height: 160px;
+    
     padding: 16px;
 
     border-radius: 16px;
@@ -144,7 +144,7 @@ body {
 .item-text{
     display: flex;
     gap: 20px;
-    padding-bottom: 60px;
+    padding-bottom: 50px;
 }
 h2 {
     font-size: 18px;
@@ -159,12 +159,35 @@ h2 {
     display: flex;
     justify-content:space-between;
 }
-#remove-but{
+#remove-but {
     padding: 6px;
     padding-inline: 16px;
 }
 
+.but_toggle_inactive {
+    padding: 0px 32px 0px 0px;
+    background-color: hsl(0, 0%, 78%);
 
+    border: 2px solid hsl(0, 0%, 78%);
+    border-radius:16px;
+
+    cursor: pointer;
+}
+.but_toggle_active {
+    padding: 0px 0px 0px 32px;
+    background-color:hsl(3, 77%, 44%);
+
+    border-radius:18px;
+    border: 2px solid hsl(3, 77%, 44%);
+
+    cursor: pointer;
+}
+.cyrcle {
+    background-color: white;
+    padding: 14px;
+    border-radius:14px;
+
+}
 
 
 
