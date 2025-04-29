@@ -1,4 +1,4 @@
-.attribution { font-size: 11px; text-align: center; }
+.attribution { font-size: 11px; text-align: center;margin-top: 20px; }
 .attribution a { color: hsl(228, 45%, 44%); }
 
 * {
@@ -21,10 +21,10 @@ body {
     align-items: center;
     
     margin-top: 30px;
-    height: 100vh;
+    height: 120vh;
 }
 
-.but_light {
+.but_light_disable {
     font-family: NotoSans;
     font-size: 16px;
 
@@ -34,12 +34,25 @@ body {
     border-width: 1px;
     cursor: pointer;
 }
-.but_light:hover {
+.but_light_disable:hover {
+    background-color: hsl(3, 77%, 44%);
+    color: white;
+}
+.but_light_enable {
+    font-family: NotoSans;
+    font-size: 16px;
+
+    border-radius: 20px;
+    border-color: rgba(0, 0, 0, 0.233);
+    border-width: 1px;
+
+    cursor: pointer;
+
     background-color: hsl(3, 77%, 44%);
     color: white;
 }
 
-.but_dark {
+.but_dark_disable {
     font-family: NotoSans;
     font-size: 16px;
 
@@ -51,9 +64,21 @@ body {
     color:white;
     cursor: pointer;
 }
-.but_dark:hover {
+.but_dark_disable:hover {
     background-color: hsl(3, 71%, 56%);
     color: hsl(227, 75%, 14%);
+}
+.but_dark_enable {
+    font-family: NotoSans;
+    font-size: 16px;
+
+    border-radius: 20px;
+    border-color: rgba(255, 255, 255, 0.137);
+    background-color: hsl(3, 71%, 56%);
+    
+    border-width: 1px;
+    color: hsl(227, 75%, 14%);
+    cursor: pointer;
 }
 
 
@@ -155,6 +180,8 @@ h2 {
     color: rgba(0, 0, 0, 0.568);
 }
 
+
+
 .item-iteract {
     display: flex;
     justify-content:space-between;
@@ -163,25 +190,77 @@ h2 {
     padding: 6px;
     padding-inline: 16px;
 }
+.but_light {
+    font-family: NotoSans;
+    font-size: 16px;
 
-.but_toggle_inactive {
+    border-radius: 20px;
+    border-color: rgba(0, 0, 0, 0.233);
+    background-color: white;
+    border-width: 1px;
+    cursor: pointer;
+}
+.but_light:hover {
+    background-color: hsl(3, 77%, 44%);
+    color: white;
+}
+.but_dark {
+    font-family: NotoSans;
+    font-size: 16px;
+
+    border-radius: 20px;
+    border-color: rgba(255, 255, 255, 0.137);
+    background-color: hsl(225, 23%, 24%);
+    border-width: 1px;
+
+    color:white;
+    cursor: pointer;
+}
+.but_dark:hover {
+    background-color: hsl(3, 71%, 56%);
+    color: hsl(227, 75%, 14%);
+}
+
+
+
+.but_toggle_inactive_light {
+    cursor: pointer;
+
     padding: 0px 32px 0px 0px;
     background-color: hsl(0, 0%, 78%);
 
     border: 2px solid hsl(0, 0%, 78%);
     border-radius:16px;
-
-    cursor: pointer;
 }
-.but_toggle_active {
+.but_toggle_active_light {
+    cursor: pointer;
+
     padding: 0px 0px 0px 32px;
     background-color:hsl(3, 77%, 44%);
 
-    border-radius:18px;
     border: 2px solid hsl(3, 77%, 44%);
-
-    cursor: pointer;
+    border-radius:18px;
 }
+.but_toggle_inactive_dark {
+    cursor: pointer;
+
+    padding: 0px 32px 0px 0px;
+    background-color: hsl(225, 23%, 24%);
+
+    border: 2px solid hsl(225, 23%, 24%);
+    border-radius:16px;
+}
+.but_toggle_active_dark {
+    cursor: pointer;
+
+    padding: 0px 0px 0px 32px;
+    background-color:hsl(3, 71%, 56%);
+
+    border: 2px solid hsl(3, 71%, 56%);
+    border-radius:16px;
+}
+
+
 .cyrcle {
     background-color: white;
     padding: 14px;
